@@ -1,76 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
-
+    <title>Priyanka B | Portfolio</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <!-- Hero Section -->
-    <header>
+    <!-- Navigation -->
+    <nav>
+        <h2>Priyanka B</h2>
 
-        <img src="profile.jpg.jpeg" alt="Profile Photo" width="180">
+        <div>
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </nav>
 
-        <h1>Priyanka B</h1>
+    <!-- Hero / Home -->
+    <section id="home" class="hero">
 
-        <p>AIML Engineering Student</p>
+        <div>
+            <h1>Hi, I'm <span>Priyanka B</span></h1>
 
-    </header>
+            <h2>AIML Engineering Student</h2>
 
-    <!-- About Me Section -->
-    <section>
+            <p>
+                Passionate about Artificial Intelligence,
+                Machine Learning and Web Development.
+            </p>
+
+            <a href="#contact" class="button">Contact Me</a>
+        </div>
+
+        <img src="profile.jpg.jpeg" alt="Priyanka Profile Photo">
+
+    </section>
+
+    <!-- About Me -->
+    <section id="about">
 
         <h2>About Me</h2>
 
         <p>
-            Hello! I am Priyanka B. I am an Artificial Intelligence and Machine Learning
-            Engineering student. I am interested in Java, Python, HTML, CSS,
-            Web Development and Artificial Intelligence.
+            I am an AIML engineering student interested in
+            Artificial Intelligence, Machine Learning and
+            software development. I enjoy learning new
+            technologies and building useful projects.
         </p>
 
     </section>
 
-    <!-- Skills Section -->
-    <section>
+    <!-- Skills -->
+    <section id="skills">
 
-        <h2>Skills</h2>
+        <h2>My Skills</h2>
 
-        <ul>
-            <li>Java</li>
-            <li>Python</li>
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>SQL</li>
-            <li>Problem Solving</li>
-        </ul>
+        <div class="skills">
 
-    </section>
+            <div>Python</div>
+            <div>Java</div>
+            <div>HTML</div>
+            <div>CSS</div>
+            <div>JavaScript</div>
+            <div>MongoDB</div>
+            <div>Git & GitHub</div>
 
-    <!-- Contact Section -->
-    <section>
-
-        <h2>Contact</h2>
-
-        <p><strong>Email:</strong> yourgmail@gmail.com</p>
-
-        <p><strong>Phone:</strong> +91 9876543210</p>
-
-        <p><strong>Location:</strong> Shivamogga, Karnataka</p>
+        </div>
 
     </section>
 
-    <!-- Footer -->
+    <!-- Contact -->
+    <section id="contact">
+
+        <h2>Contact Me</h2>
+
+        <p>Email: your-email@example.com</p>
+
+        <p>
+            GitHub:
+            <a href="https://github.com/priyanka-b1234">
+                GitHub Profile
+            </a>
+        </p>
+
+    </section>
+
     <footer>
-
-        <p>© 2026 Priyanka B | Portfolio Website</p>
-
+        <p>© 2026 Priyanka B. All Rights Reserved.</p>
     </footer>
 
 </body>
-
 </html>

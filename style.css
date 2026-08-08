@@ -1,52 +1,136 @@
-body{
-    margin:0;
-    font-family:Arial, sans-serif;
-    background:#f2f2f2;
-    text-align:center;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-header{
-    background:#0066cc;
-    color:white;
-    padding:40px;
+body {
+    font-family: Arial, sans-serif;
+    background: #f5f7ff;
+    color: #222;
 }
 
-header img{
-    width:180px;
-    height:180px;
-    border-radius:50%;
-    border:5px solid white;
+/* Navigation */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 8%;
+    background: #1e3a8a;
+    color: white;
 }
 
-section{
-    width:70%;
-    margin:20px auto;
-    background:white;
-    padding:20px;
-    border-radius:10px;
-    box-shadow:0px 0px 10px gray;
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
 }
 
-h2{
-    color:#0066cc;
+/* Hero */
+.hero {
+    min-height: 90vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 50px;
 }
 
-ul{
-    list-style:none;
-    padding:0;
+.hero h1 {
+    font-size: 45px;
 }
 
-li{
-    background:#0066cc;
-    color:white;
-    margin:10px;
-    padding:10px;
-    border-radius:5px;
+.hero span {
+    color: #2563eb;
 }
 
-footer{
-    background:#0066cc;
-    color:white;
-    padding:15px;
-    margin-top:20px;
+.hero h2 {
+    margin: 15px 0;
+}
+
+.hero p {
+    margin-bottom: 25px;
+    font-size: 18px;
+}
+
+.hero img {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 5px solid #2563eb;
+}
+
+.button {
+    background: #2563eb;
+    color: white;
+    padding: 12px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+/* Sections */
+section {
+    padding: 70px 10%;
+    text-align: center;
+}
+
+section h2 {
+    color: #1e3a8a;
+    margin-bottom: 20px;
+}
+
+/* Skills */
+.skills {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.skills div {
+    background: white;
+    padding: 15px 25px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px #ccc;
+}
+
+/* Contact */
+#contact {
+    background: #e8efff;
+}
+
+#contact a {
+    color: #2563eb;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #1e3a8a;
+    color: white;
+}
+
+/* Mobile */
+@media (max-width: 700px) {
+
+    nav {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .hero {
+        flex-direction: column;
+        text-align: center;
+        gap: 40px;
+    }
+
+    .hero h1 {
+        font-size: 32px;
+    }
+
+    .hero img {
+        width: 200px;
+        height: 200px;
+    }
 }
