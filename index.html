@@ -1,76 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
+    <title>Priyanka B | Portfolio</title>
+
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <!-- Hero Section -->
-    <header>
+<!-- Navigation -->
+<nav>
+    <h2>Priyanka<span>.</span></h2>
+    <div>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+    </div>
+</nav>
 
-        <img src="profile.jpg.jpeg" alt="Profile Photo" width="180">
-
+<!-- Home -->
+<section id="home" class="hero">
+    <div>
+        <p>Hello, I'm</p>
         <h1>Priyanka B</h1>
+        <h2>AIML Engineering Student</h2>
+        <p>Passionate about AI, Machine Learning and Web Development.</p>
+        <a href="#contact" class="btn">Contact Me</a>
+    </div>
 
-        <p>AIML Engineering Student</p>
+    <img src="profile.jpg.jpeg" alt="Profile Photo">
+</section>
 
-    </header>
+<!-- About -->
+<section id="about">
+    <h2>About Me</h2>
 
-    <!-- About Me Section -->
-    <section>
+    <div class="cards">
+        <div>
+            <i class="fa-solid fa-user-graduate"></i>
+            <h3>About Me</h3>
+            <p>I am an AIML engineering student interested in AI and software development.</p>
+        </div>
 
-        <h2>About Me</h2>
+        <div>
+            <i class="fa-solid fa-code"></i>
+            <h3>My Interest</h3>
+            <p>I enjoy programming, web development and learning new technologies.</p>
+        </div>
+    </div>
+</section>
 
-        <p>
-            Hello! I am Priyanka B. I am an Artificial Intelligence and Machine Learning
-            Engineering student. I am interested in Java, Python, HTML, CSS,
-            Web Development and Artificial Intelligence.
-        </p>
+<!-- Skills -->
+<section id="skills">
+    <h2>My Skills</h2>
 
-    </section>
+    <div class="skills">
+        <div><i class="fa-brands fa-html5"></i><h3>HTML</h3></div>
+        <div><i class="fa-brands fa-css3-alt"></i><h3>CSS</h3></div>
+        <div><i class="fa-brands fa-java"></i><h3>Java</h3></div>
+        <div><i class="fa-brands fa-python"></i><h3>Python</h3></div>
+    </div>
+</section>
 
-    <!-- Skills Section -->
-    <section>
+<!-- Contact -->
+<section id="contact">
+    <h2>Contact Me</h2>
 
-        <h2>Skills</h2>
+    <p><i class="fa-solid fa-envelope"></i> Email: your-email@gmail.com</p>
+    <p><i class="fa-brands fa-github"></i> GitHub: priyanka-b1234</p>
 
-        <ul>
-            <li>Java</li>
-            <li>Python</li>
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>SQL</li>
-            <li>Problem Solving</li>
-        </ul>
+    <a href="mailto:your-email@gmail.com" class="btn">Send Message</a>
+</section>
 
-    </section>
-
-    <!-- Contact Section -->
-    <section>
-
-        <h2>Contact</h2>
-
-        <p><strong>Email:</strong> yourgmail@gmail.com</p>
-
-        <p><strong>Phone:</strong> +91 9876543210</p>
-
-        <p><strong>Location:</strong> Shivamogga, Karnataka</p>
-
-    </section>
-
-    <!-- Footer -->
-    <footer>
-
-        <p>© 2026 Priyanka B | Portfolio Website</p>
-
-    </footer>
+<footer>
+    <p>© 2026 Priyanka B | Portfolio</p>
+</footer>
 
 </body>
-
 </html>
