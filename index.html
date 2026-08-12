@@ -1,27 +1,39 @@
-```html
+html
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
 <nav>
     <h2>Priyanka</h2>
-    <div>
+
+    <button id="menu">☰</button>
+
+    <div id="links">
         <a href="#home">Home</a>
         <a href="#about">About</a>
         <a href="#skills">Skills</a>
         <a href="#contact">Contact</a>
     </div>
+
+    <button id="theme">🌙</button>
 </nav>
 
 <section id="home">
-    <h1>Hi, I'm Priyanka</h1>
-    <h2>AIML Engineering Student</h2>
-    <p>I am interested in AI, Machine Learning and Web Development.</p>
-    <a class="button" href="#contact">Contact Me</a>
+    <div>
+        <h1>Hi, I'm Priyanka</h1>
+        <h2>AIML Engineering Student</h2>
+        <p>I am interested in AI, Machine Learning and Web Development.</p>
+        <a class="button" href="#contact">Contact Me</a>
+    </div>
+
+    <img src="profile.jpg.jpeg" alt="Profile Photo">
 </section>
 
 <section id="about">
@@ -31,6 +43,7 @@
 
 <section id="skills">
     <h1>My Skills</h1>
+
     <div class="skills">
         <div>🐍 Python</div>
         <div>☕ Java</div>
@@ -41,10 +54,18 @@
 
 <section id="contact">
     <h1>Contact Me</h1>
-    <p>📧 yourmail@gmail.com</p>
-    <p>💼 LinkedIn: Priyanka</p>
+
+    <form id="form">
+        <input id="name" type="text" placeholder="Your Name">
+        <input id="email" type="email" placeholder="Your Email">
+        <textarea id="message" placeholder="Your Message"></textarea>
+        <button type="submit">Send Message</button>
+        <p id="result"></p>
+    </form>
 </section>
+
+<script src="script.js"></script>
 
 </body>
 </html>
-```
+
