@@ -1,46 +1,30 @@
-let menu = document.getElementById("menu");
-let links = document.getElementById("links");
-let theme = document.getElementById("theme");
+function toggleMenu() {
+    document.getElementById("navLinks").classList.toggle("active");
+}
 
-menu.onclick = function() {
-    links.classList.toggle("show");
-};
-
-theme.onclick = function() {
+function toggleTheme() {
     document.body.classList.toggle("dark");
-};
+}
 
-document.querySelectorAll("nav a").forEach(function(link) {
-    link.onclick = function() {
-        links.classList.remove("show");
-    };
+document.querySelectorAll(".nav-links a").forEach(link => {
+    link.addEventListener("click", () => {
+        document.getElementById("navLinks").classList.remove("active");
+    });
 });
 
-let sections = document.querySelectorAll("section");
+document.getElementById("contactForm").addEventListener("submit", function(e) {
+    e.preventDefault();
 
-window.onscroll = function() {
-    sections.forEach(function(section) {
-        let position = section.getBoundingClientRect().top;
+    let name = document.getElementById("name").value.trim();
+    let email = document.getElementById("email").value.trim();
+    let message = document.getElementById("message").value.trim();
+    let result = document.getElementById("formMessage");
 
-        if (position < window.innerHeight - 100) {
-            section.classList.add("show");
-        }
-    });
-};
-
-document.getElementById("form").onsubmit = function(event) {
-    event.preventDefault();
-
-    let name = document.getElementById("name").value;
-    let email = document.getElementById("email").value;
-    let message = document.getElementById("message").value;
-    let result = document.getElementById("result");
-
-    if (name == "" || email == "" || message == "") {
-        result.innerHTML = "Please fill all fields.";
-        result.style.color = "red";
-    } else {
-        result.innerHTML = "Message sent successfully!";
-        result.style.color = "green";
+    if (name === "" || email === "" || message === "") {
+        result.textContent = "Please fill in all fields.";
+        return;
     }
-};
+
+    result.textContent = "Message submitted successfully!";
+    this.reset();
+});
