@@ -25,10 +25,6 @@ This is my personal portfolio website created to showcase my skills, projects, e
 
 ## Projects
 
-### Smart Resume Analyzer
-
-An AI-based project that analyzes resumes and compares them with job descriptions to identify matching and missing skills.
-
 ### Personal Portfolio
 
 A responsive personal portfolio website designed to showcase my skills, education, projects, and achievements.
