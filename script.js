@@ -6,14 +6,14 @@ function toggleTheme() {
     document.body.classList.toggle("dark");
 }
 
-document.querySelectorAll(".nav-links a").forEach(link => {
-    link.addEventListener("click", () => {
+document.querySelectorAll(".nav-links a").forEach(function(link) {
+    link.addEventListener("click", function() {
         document.getElementById("navLinks").classList.remove("active");
     });
 });
 
-document.getElementById("contactForm").addEventListener("submit", function(e) {
-    e.preventDefault();
+document.getElementById("contactForm").addEventListener("submit", function(event) {
+    event.preventDefault();
 
     let name = document.getElementById("name").value.trim();
     let email = document.getElementById("email").value.trim();

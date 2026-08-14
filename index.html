@@ -6,14 +6,12 @@
     <title>Priyanka B | Portfolio</title>
     <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
 <header>
     <nav>
         <h2>Priyanka B</h2>
-
-        <button class="menu" onclick="toggleMenu()">☰</button>
+        <button class="menu-btn" onclick="toggleMenu()">☰</button>
 
         <div class="nav-links" id="navLinks">
             <a href="#home">Home</a>
@@ -22,75 +20,75 @@
             <a href="#projects">Projects</a>
             <a href="#education">Education</a>
             <a href="#contact">Contact</a>
-            <button onclick="toggleTheme()">🌙</button>
+            <button class="theme-btn" onclick="toggleTheme()">🌙</button>
         </div>
     </nav>
 </header>
 
-<!-- HOME -->
 <section id="home" class="hero">
-    <div class="hero-text">
-        <h1>Hello, I'm <span>Priyanka B</span></h1>
-        <h2>AI & ML Engineering Student</h2>
+    <div class="hero-content">
+        <h1>Hi, I'm <span>Priyanka B</span></h1>
+        <h2>Artificial Intelligence & Machine Learning Student</h2>
         <p>
-            Passionate about Artificial Intelligence, Machine Learning,
-            Java, Python and Web Development.
+            I am passionate about Artificial Intelligence,
+            Machine Learning, programming and web development.
         </p>
-
         <a href="#projects" class="btn">View My Projects</a>
     </div>
 
-    <img src="profile.jpg.jpeg" alt="Priyanka Profile Photo">
+    <div class="hero-image">
+        <img src="profile.jpg.jpeg" alt="Priyanka Profile Photo">
+    </div>
 </section>
 
-<!-- ABOUT -->
 <section id="about">
-    <h2 class="title">About Me</h2>
+    <h2 class="section-title">About Me</h2>
 
     <div class="about-box">
         <p>
-            I am an Artificial Intelligence and Machine Learning engineering
-            student interested in developing innovative and user-friendly
-            applications. I enjoy learning new technologies and building
-            practical projects using programming and web development.
+            I am an Artificial Intelligence and Machine Learning
+            engineering student interested in software development,
+            web technologies and intelligent applications.
+        </p>
+
+        <p>
+            I enjoy learning new technologies and creating practical
+            projects that improve my programming and problem-solving skills.
         </p>
     </div>
 </section>
 
-<!-- SKILLS -->
 <section id="skills">
-    <h2 class="title">My Skills</h2>
+    <h2 class="section-title">My Skills</h2>
 
     <div class="skills-container">
-        <div class="skill">HTML</div>
-        <div class="skill">CSS</div>
-        <div class="skill">JavaScript</div>
-        <div class="skill">Python</div>
-        <div class="skill">Java</div>
-        <div class="skill">MongoDB</div>
-        <div class="skill">Artificial Intelligence</div>
-        <div class="skill">Machine Learning</div>
+        <div class="skill-card">HTML</div>
+        <div class="skill-card">CSS</div>
+        <div class="skill-card">JavaScript</div>
+        <div class="skill-card">Python</div>
+        <div class="skill-card">Java</div>
+        <div class="skill-card">MongoDB</div>
+        <div class="skill-card">Artificial Intelligence</div>
+        <div class="skill-card">Machine Learning</div>
+        <div class="skill-card">Git & GitHub</div>
     </div>
 </section>
 
-<!-- PROJECTS -->
 <section id="projects">
-    <h2 class="title">My Projects</h2>
+    <h2 class="section-title">My Projects</h2>
 
     <div class="projects-container">
 
         <div class="project-card">
             <h3>Smart Resume Analyzer</h3>
-
             <p>
-                An AI-based application that analyzes resumes and job
-                descriptions, calculates matching scores and identifies
-                missing skills.
+                An AI-based application that analyzes resumes and
+                job descriptions, calculates matching scores and
+                identifies missing skills.
             </p>
 
             <div class="project-buttons">
-                <a href="https://github.com/priyanka-b1234/smart-resume-analyzer"
-                   target="_blank">
+                <a href="https://github.com/priyanka-b1234/smart-resume-analyzer" target="_blank">
                     GitHub
                 </a>
             </div>
@@ -98,44 +96,53 @@
 
         <div class="project-card">
             <h3>Personal Portfolio Website</h3>
-
             <p>
                 A responsive personal portfolio website created using
                 HTML, CSS and JavaScript to showcase my skills,
-                education and projects.
+                projects and education.
             </p>
 
             <div class="project-buttons">
-                <a href="https://github.com/priyanka-b1234/Portfolio"
-                   target="_blank">
+                <a href="https://github.com/priyanka-b1234/Portfolio" target="_blank">
                     GitHub
                 </a>
 
-                <a href="https://priyanka-b1234.github.io/Portfolio/"
-                   target="_blank">
+                <a href="https://priyanka-b1234.github.io/Portfolio/" target="_blank">
                     Live Demo
                 </a>
+            </div>
+        </div>
+
+        <div class="project-card">
+            <h3>Smart Campus Resource Optimization</h3>
+            <p>
+                A project focused on managing and optimizing campus
+                resources such as classrooms, laboratories, library
+                spaces, energy and parking.
+            </p>
+
+            <div class="project-buttons">
+                <a href="#" target="_blank">GitHub</a>
             </div>
         </div>
 
     </div>
 </section>
 
-<!-- EDUCATION -->
 <section id="education">
-    <h2 class="title">Education</h2>
+    <h2 class="section-title">Education</h2>
 
     <div class="education-card">
         <h3>B.E. Artificial Intelligence & Machine Learning</h3>
 
         <p>
-            Currently pursuing my Bachelor's degree in Artificial
+            Currently pursuing Bachelor's degree in Artificial
             Intelligence and Machine Learning.
         </p>
 
         <p>
-            Developing knowledge in AI, Machine Learning, Python,
-            Java, Database Management and Web Development.
+            Interested in Artificial Intelligence, Machine Learning,
+            Java, Python, databases and web development.
         </p>
     </div>
 
@@ -144,27 +151,39 @@
     </a>
 </section>
 
-<!-- CONTACT -->
 <section id="contact">
-    <h2 class="title">Contact Me</h2>
+    <h2 class="section-title">Contact Me</h2>
+
+    <p class="contact-intro">
+        Feel free to connect with me through GitHub,
+        LinkedIn or Email.
+    </p>
+
+    <div class="social-links">
+        <a href="https://github.com/priyanka-b1234" target="_blank">
+            GitHub
+        </a>
+
+        <a href="https://www.linkedin.com/" target="_blank">
+            LinkedIn
+        </a>
+
+        <a href="mailto:your-email@gmail.com">
+            Email
+        </a>
+    </div>
 
     <form id="contactForm">
-
         <input type="text" id="name" placeholder="Your Name">
-
         <input type="email" id="email" placeholder="Your Email">
-
         <textarea id="message" placeholder="Your Message"></textarea>
-
         <button type="submit">Send Message</button>
-
         <p id="formMessage"></p>
-
     </form>
 </section>
 
 <footer>
-    <p>© 2026 Priyanka B | Personal Portfolio</p>
+    <p>© 2026 Priyanka B | Portfolio</p>
 </footer>
 
 <script src="script.js"></script>
